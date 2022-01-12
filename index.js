@@ -11,4 +11,5 @@ app.use(express.json({ extended: true }));
 
 app.use("/api", require("./Routes/Api/index"));
 
-app.listen(3300, () => console.log("Express server is running"));
+const port = process.env.port;
+app.listen(port, () => console.log("Express server is running"));

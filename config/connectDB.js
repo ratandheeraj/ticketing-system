@@ -1,10 +1,13 @@
 const { Sequelize } = require("sequelize");
-// require("dotenv").config();
+require("dotenv").config();
 
-const config = require("config");
-const user = config.get("dbUser");
-const password = config.get("dbPassword");
-const dbName_local = config.get("dbName_local");
+// const config = require("config");
+// const user = config.get("dbUser");
+// const password = config.get("dbPassword");
+// const dbName_local = config.get("dbName_local");
+user = process.env.dbUser;
+password = process.env.dbPassword;
+dbName_local = process.env.dbName_local;
 
 const sequelize = new Sequelize(dbName_local, user, password, {
   dialect: "mysql",

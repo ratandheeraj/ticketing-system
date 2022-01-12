@@ -42,3 +42,16 @@ module.exports.createSupport = async (req, res, next) => {
     return res.status(500).send("server error");
   }
 };
+
+module.exports.getAllSupport = async (req, res, next) => {
+  try {
+    let support = await Support.findAll();
+    if (_.isEmpty(support)) {
+      return res.status(404).send("No support staff exist in the database");
+    }
+    return res.status(200).json(support);
+  } catch (err) {
+    console.log(err);
+    return res.status(500).send("server error");
+  }
+};
