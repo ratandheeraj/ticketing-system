@@ -1,5 +1,7 @@
-# ticketing-system
+# Ticketing System
 
-![image](https://user-images.githubusercontent.com/50696909/149067845-868298db-73cc-4728-8073-e0837f1a6734.png)
+![image](https://user-images.githubusercontent.com/50696909/149518355-11e240e8-dd78-44db-87a2-9b0f4f898b96.png)
 
-![image](https://user-images.githubusercontent.com/50696909/141120403-4247177e-7748-4473-9824-4ecc400ebf15.png)
+
+![image](https://user-images.githubusercontent.com/50696909/149518923-09165ce4-765f-4212-a43a-5b65233cef05.png)
+
